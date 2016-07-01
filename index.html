@@ -46,32 +46,12 @@ $(function() {
 </script>
 
 
-<script>
-$('.myCarousel').carousel({
-  interval: 2000,
-  pause: “hover”,
-    wrap: true
-})
-</script>
 
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
+
 	  
 </head>
+
+
 
 <style>
 #page4
@@ -176,6 +156,22 @@ body {
 	<div id="status">&nbsp;</div>
 </div>
 
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 
 <div class="top">
 <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
@@ -304,6 +300,14 @@ body {
 </div>
    <img src=" http://i.imgur.com/jgF86V0.jpg" height=100% width=100% class="img-responsive" alt="Responsive image">
 </div>
+
+<script>
+$('.myCarousel').carousel({
+  interval: 2000,
+  pause: “hover”,
+    wrap: true
+})
+</script>
 
 <div id="page3">
   <a id="blog" class="smooth"></a>
