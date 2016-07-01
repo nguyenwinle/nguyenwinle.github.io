@@ -1,49 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+<html>
 
-    <title>Nguyen "Win" Le</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<head>
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	  <title>Nguyen "Win" Le</title>
+
+	  <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, print"/>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 
 <link rel="stylesheet" href="bootstrap-social.css">
-
-
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
-  </head>
-  <body>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!--load font awesome-->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-</script>
+	  
+</head>
 
-    <style>
+<style>
 #page4
 { background-color: black;
-  color: white;
+	color: white;
 }
 .smooth { background-color: black;}
 .divider {
@@ -137,38 +121,53 @@ body {
 }
 </style>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<body>
+
+<script src="bootstrap.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+
 <script>
-$('.smooth').on('click', function() {
-    $.smoothScroll({
-        scrollElement: $('body'),
-        scrollTarget: '#' + this.id
-    });
-    
-    return false;
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
 </script>
 
+<script>
+$('.myCarousel').carousel({
+  interval: 2000,
+  pause: “hover”,
+    wrap: true
+})
+</script>
 
 <script type="text/javascript">
 
-  $(window).load(function() { 
-  $('#status').fadeOut(); 
-  $('#preloader').delay(350).fadeOut('slow'); 
-  $('body').delay(350).css({'overflow':'visible'});
-  })
+	$(window).load(function() { 
+	$('#status').fadeOut(); 
+	$('#preloader').delay(350).fadeOut('slow'); 
+	$('body').delay(350).css({'overflow':'visible'});
+	})
 </script> 
 
+
 <div id="preloader">
-  <div id="status">&nbsp;</div>
+	<div id="status">&nbsp;</div>
 </div>
 
 
@@ -185,8 +184,8 @@ $('.smooth').on('click', function() {
 <a class="navbar-brand" href="#">Nguyen "Win" Le</a>
 </div>
 <div class="navbar-collapse collapse">
-  <ul class="nav navbar-nav  navbar-right">
-  <li class="active"><a href="#">HOME</a></li>
+	<ul class="nav navbar-nav  navbar-right">
+	<li class="active"><a href="#">HOME</a></li>
  <li><a href="#page1">ABOUT ME</a></li>
     <li><a href="#page2">PORTFOLIO</a></li>
     <li><a href="#page3">BLOG</a></li>
@@ -199,17 +198,17 @@ $('.smooth').on('click', function() {
 <div class="row">
     <div class="col-xs-12 col.sm-4">
 <div id="page1">
-
+  <a id="about" class="smooth"></a>
 
  <hr class="featurette-divider">
 
   <div class="featurette">
-    <img class="featurette-image img-circle pull-right" src="http://i.imgur.com/6f4Af5K.jpg">
+    <img class="featurette-image img-circle pull-right" src="http://i.imgur.com/2ueCxYS.jpg">
     <center><h2 class="featurette-heading">About<span class="text-muted"> Me</span></h2></center>
     <p class="lead">
     Hello, I'm Nguyen (Win), an aspiring Full-Stack Developer. A Full-stack Developer is defined as a developer who is comfortable working with both back-end and front-end technologies. 
 
-  <br><br>I want to become a full-stack developer so that I can express my way of thinking and creativity through coding and building amazing web applications. I am currently living in Sacramento, CA and my dream is to become a well-established developer. </p>
+    <br><br>I want to become a full-stack developer so that I can express my way of thinking and creativity through coding and building amazing web applications and to also know what is going on behind the scenes. I am currently living in Sacramento, CA and my dream is to become a well-established developer. </p>
   </div>
 
   <hr class="featurette-divider">
@@ -239,12 +238,14 @@ $('.smooth').on('click', function() {
 
   <hr class="featurette-divider">
 
-</div></div>
-
+        </div></div>
+ 
 
   <img src="http://i.imgur.com/zXnGsqb.jpg" height=100% width=100% class="img-responsive" alt="Responsive image">
  
   <div id="page2">   
+  <a id="portfolio" class="smooth"></a>
+    
 
     <div id="myCarousel" class="carousel slide">
   
@@ -299,7 +300,7 @@ $('.smooth').on('click', function() {
 </div>
 
 <div id="page3">
-
+  <a id="blog" class="smooth"></a>
  
  <hr class="featurette-divider">
 
@@ -369,7 +370,7 @@ Phone number: (916) 233-6415</h3>
 
 <footer>
  <center> <a href="#">Back to top</a>
-    <p>All rights reserved.<a href="http://nguyenwinle.github.io"> Nguyen Le</a></p></center></footer>
+    <p>All rights reserved.<a href="http://nguyenwinle90.wordpress.com"> Nguyen Le</a></p></center></footer>
 
   
 
@@ -379,9 +380,10 @@ Phone number: (916) 233-6415</h3>
 
 
 
+
 </div></div></div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
-  </body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+</body>
 </html>
