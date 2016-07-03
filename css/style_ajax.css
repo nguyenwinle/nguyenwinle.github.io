@@ -13,13 +13,13 @@
 }
 
 #status {
-    width:500px;
-    height:500px;
+    width:350px;
+    height:350px;
     position:absolute;
     left:50%; /* centers the loading animation horizontally one the screen */
     top:50%; /* centers the loading animation vertically one the screen */
-    background-image:url(https://raw.githubusercontent.com/nguyenwinle/nguyenwinle.github.io/master/8871.gif); /* path to your loading animation */
+    background-image:url(http://www.gannett-cdn.com/experiments/usatoday/2014/gas-leaks/img/loader.gif); /* path to your loading animation */
     background-repeat:no-repeat;
     background-position:center;
-    margin:-250px 0 0 -250px; /* is width and height divided by two */
+    margin:-175px 0 0 -175px; /* is width and height divided by two */
 }
