@@ -10,7 +10,7 @@ body {
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#fff; /* change if the mask should be a color other than white */
+	background-color:black; /* change if the mask should be a color other than white */
 	z-index:99; /* makes sure it stays on top */
 }
 
