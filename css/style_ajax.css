@@ -13,13 +13,13 @@
 }
 
 #status {
-    width:240px;
-    height:240px;
+    width:500px;
+    height:500px;
     position:absolute;
-    left:40%; /* centers the loading animation horizontally one the screen */
+    left:50%; /* centers the loading animation horizontally one the screen */
     top:50%; /* centers the loading animation vertically one the screen */
-    background-image:url(http://pds21.egloos.com/pds/201108/07/92/Aperture_1950_loading_t2.gif); /* path to your loading animation */
+    background-image:url(http://giffiles.alphacoders.com/887/8871.gif); /* path to your loading animation */
     background-repeat:no-repeat;
     background-position:center;
-    margin:-120px 0 0 -120px; /* is width and height divided by two */
+    margin:-250px 0 0 -250px; /* is width and height divided by two */
 }
