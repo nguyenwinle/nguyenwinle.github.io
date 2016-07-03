@@ -18,7 +18,7 @@ body {
 	width:350px;
 	height:350px;
 	position:absolute;
-	left:50%; /* centers the loading animation horizontally on the screen */
+	left:40%; /* centers the loading animation horizontally on the screen */
 	top:50%; /* centers the loading animation vertically on the screen */
 	background-image:url(http://www.watercraftsuperstore.net/mm5/graphics/loading.gif); /* path to your loading animation */
 	background-repeat:no-repeat;
