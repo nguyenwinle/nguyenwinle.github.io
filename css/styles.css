@@ -18,10 +18,10 @@ body {
 	width:250px;
 	height:250px;
 	position:absolute;
-	left:40%; /* centers the loading animation horizontally on the screen */
+	left:50%; /* centers the loading animation horizontally on the screen */
 	top:50%; /* centers the loading animation vertically on the screen */
 	background-image:url(http://pds21.egloos.com/pds/201108/07/92/Aperture_1950_loading_t2.gif); /* path to your loading animation */
 	background-repeat:no-repeat;
 	background-position:center;
-	margin:-100px 0 0 -100px; /* is width and height divided by two */
+	margin:-125px 0 0 -125px; /* is width and height divided by two */
 }
