@@ -8,7 +8,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    background-color:#fff; /* change if the mask should have another color then white */
+    background-color:black; /* change if the mask should have another color then white */
     z-index:99; /* makes sure it stays on top */
 }
 
