@@ -132,6 +132,15 @@ body {
 }
 </style>
 
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(2800); // will first fade out the loading animation
+            $('#preloader').delay(2800).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(2800).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
 
 
 <body>
@@ -363,16 +372,6 @@ Phone number: (916) 233-6415</h3>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 
-<!-- Preloader -->
-<script type="text/javascript">
-    //<![CDATA[
-        $(window).load(function() { // makes sure the whole site is loaded
-            $('#status').fadeOut(2800); // will first fade out the loading animation
-            $('#preloader').delay(2800).fadeOut('slow'); // will fade out the white DIV that covers the website.
-            $('body').delay(2800).css({'overflow':'visible'});
-        })
-    //]]>
-</script>
 
 
 
