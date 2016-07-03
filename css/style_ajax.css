@@ -16,7 +16,7 @@
     width:350px;
     height:350px;
     position:absolute;
-    left:50%; /* centers the loading animation horizontally one the screen */
+    left:40%; /* centers the loading animation horizontally one the screen */
     top:50%; /* centers the loading animation vertically one the screen */
     background-image:url(http://www.watercraftsuperstore.net/mm5/graphics/loading.gif); /* path to your loading animation */
     background-repeat:no-repeat;
