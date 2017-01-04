@@ -365,4 +365,32 @@ Phone number: (916) 233-6415</h3>
 })();
 </script>
 
+  <script>
+(function($) {
+    var $animation_elements = $('.img-responsive'),
+        $window = $(window);
+ 
+    function check_if_in_view() {
+        var window_height = $window.height(),
+            window_top_position = $window.scrollTop(),
+            window_bottom_position = (window_top_position + window_height);
+ 
+        $animation_elements.each(function() {
+            var $element = $(this),
+                element_height = $element.outerHeight(),
+                element_top_position = $element.offset().top,
+                element_bottom_position = (element_top_position + element_height);
+ 
+            //check to see if this element is within viewport
+            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                $element.addClass('img-responsive');
+            } else {
+                $element.removeClass('img-responsive');
+            }
+        });
+    }
+ 
+    $window.on('scroll resize', check_if_in_view);
+})(jQuery);
+</script>
 
