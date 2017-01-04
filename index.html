@@ -137,17 +137,65 @@ section.module.parallax-3 {
 }
 </style>
 
+<body>
 
+
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<div class="top">
+<body data-spy="scroll" data-target=".navbar">
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+   <a href="#" class="navbar-brand"><img src="https://s28.postimg.org/ya37yhrdp/horse.png" height=12% width=12% class="img-responsive" alt="Responsive image"></a>
+  
+  <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">&#9776;
+  </button>
+  
+  <div class="collapse navbar-collapse navHeaderCollapse">
+
+   
+   
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="#page1">About Me</a></li>
+      <li><a href="#page2">Portfolio</a></li>
+      <li><a href="#page3">Projects</a></li>
+      <li><a href="#page4">Blog</a></li>
+      <li><a href="#page5">Contact</a></li>
+    </ul>
+  </div>
+  
+</div>
+ </nav>
+  
+</body>
 
 <section class="module parallax parallax-1">
   <div class="container">
-    <h1>Nguyen Le</h1>
+ 
   </div>
 </section>
 
 <section class="module content">
   <div class="container">
-    <h2>Lorem Ipsum Dolor</h2>
+    <h2>About Me</h2>
     <p>Lorem ipsum dolor...</p>
   </div>
 </section>
