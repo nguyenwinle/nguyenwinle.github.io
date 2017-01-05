@@ -66,6 +66,51 @@
 
 
 <style>
+  
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family:Arial;
+
+}
+
+.content {
+  height: 600px;
+  background-color:lightgray;
+}
+
+.about {
+  max-width: 600px;
+  margin: 0 auto;
+  padding:100px 0;
+  transform-style:preserve-3d;
+  transform: perspective(800px);
+}
+
+.about h2{
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.about h2,.about p {
+  transition: all 0.8s ease;
+}
+
+.about hidden h2{
+  opacity: 0;
+  transform: translate3d(0, 0, 400px) rotateY(-40deg);
+}
+
+.about hidden p{
+  opacity: 0;
+  transform: translate3d(0, 0, 400px) rotateY(40deg);
+}
+
+  
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -228,7 +273,13 @@ $(function() {
 </section>
 
 <section class="module content">
-  
+  <div class="content"></div>
+
+<div class="about hidden">
+<h2>About Me</h2>
+<p><h4>Hello, I'm Nguyen (Win) from Sacramento, California. I am an aspiring Full-Stack Web Developer currently taking the Full-Stack Web Developer Nanodegree at Udacity. As a child, I used to express my creativity and thoughts through drawing. When I got older, I taught myself how to use Adobe Photoshop to create layouts, pictures, and other work for Myspace pages and for friends while learning a bit of HTML and CSS along the way. I am the type of person that enjoys creating something and to share them with others. It's a rewarding feeling.<br><br>I went to college confused not knowing what I wanted to do. It's a long time coming but I finally know what I want to do in life and that is to become a Full-Stack Web developer. As a developer, I want to express my way of thinking and creativity through coding and to build amazing web and mobile applications.  </p>
+</div>
+
   <div class="container">
     <div id="page1">
   <a id="about" class="smooth"></a>
@@ -382,3 +433,16 @@ Phone number: (916) 233-6415</h3>
 })();
 </script>
 
+<script>
+  (function(){
+  
+  var aboutEl = $('div.about'),
+  aboutEloffset = aboutEl.offset().top/2,
+  documentEl = $(document);
+
+  documentEl.on('scroll', function() {
+    if ( documentEl.scrollTop() > aboutEloffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden');
+  });
+
+})();
+  </script>
