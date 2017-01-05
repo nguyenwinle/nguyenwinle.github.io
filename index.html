@@ -69,33 +69,29 @@
   
 }
 
-.about {
-  max-width: 600px;
-  margin: 0 auto;
-  padding:100px 0;
-  transform-style:preserve-3d;
-  transform: perspective(800px);
-}
-
-.about h2{
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 400;
-}
-
-.about h2,.about p {
-  transition: all 0.8s ease;
-}
-
-.about hidden h2{
-  opacity: 0;
-  transform: translate3d(0, 0, 400px) rotateY(-40deg);
-}
-
-.about hidden p{
-  opacity: 0;
-  transform: translate3d(0, 0, 400px) rotateY(40deg);
-}
+            .about {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 100px 0;
+                transform-style: preserve-3d;
+                transform: perspective(800px);
+            }
+            .about .featurette-heading {
+                text-transform: uppercase;
+                font-size: 50px;
+                font-weight: 400;
+            }
+            .about .featurette-heading, .about p {
+                transition: all 1s ease;
+            }
+            .about.hidden .featurette-heading {
+                opacity: 0;
+                transform: translate3d(0, 0, 400px) rotateY(-40deg);
+            }
+            .about.hidden p {
+                opacity: 0;
+                transform: translate3d(0, 0, 400px) rotateY(40deg);
+            }
 
   
 .container {
@@ -260,33 +256,25 @@ $(function() {
 </section>
 
 <section class="module content">
-  <div class="content"></div>
-
-<div class="about hidden">
-<h2>About Me</h2>
-<p><h4>Hello, I'm Nguyen (Win) from Sacramento, California. I am an aspiring Full-Stack Web Developer currently taking the Full-Stack Web Developer Nanodegree at Udacity. As a child, I used to express my creativity and thoughts through drawing. When I got older, I taught myself how to use Adobe Photoshop to create layouts, pictures, and other work for Myspace pages and for friends while learning a bit of HTML and CSS along the way. I am the type of person that enjoys creating something and to share them with others. It's a rewarding feeling.<br><br>I went to college confused not knowing what I wanted to do. It's a long time coming but I finally know what I want to do in life and that is to become a Full-Stack Web developer. As a developer, I want to express my way of thinking and creativity through coding and to build amazing web and mobile applications.  </p>
-</div>
-
+ 
   <div class="container">
     <div id="page1">
   <a id="about" class="smooth"></a>
 <div class="container-fluid">
     <br>
     <div class="row">
-
+      
+<div class="about hidden">
        <center><div class="icon"><i class="fa fa-pencil"></i><h2 class="featurette-heading"> About<span class="text-muted"> Me</span></h2>
          <hr class="featurette-divider"></div></center>
-  <img class="featurette-image img-circle img-responsive pull-left" src="#">
- <p class="lead">
-  <h4>Hello, I'm Nguyen (Win) from Sacramento, California. I am an aspiring Full-Stack Web Developer currently taking the Full-Stack Web Developer Nanodegree at Udacity. When I was younger, I used to express my creativity and thoughts through drawing. As I got older and throughout high school, I taught myself how to use Adobe Photoshop to create layouts, pictures, and other graphic works when Myspace was around and for friends while learning a bit of HTML and CSS along the way. I am the type of person that enjoys creating something and to share them with others because to me, it is very rewarding feeling.<br><br>While I was working full-time, I came to a realization that I was not happy and I was introduced to the idea of coding from my friends and family and therefore, I have been learning and teaching myself computer programming languages with the help of online resources. It's a long time coming but I finally know what I want to do in life and that is to become a Full-Stack Web developer. As a developer, I want to express my way of thinking and creativity through coding and to build amazing web and mobile applications. It would be an incredible journey and experience.    
+ <p>Hello, I'm Nguyen (Win) from Sacramento, California. I am an aspiring Full-Stack Web Developer currently taking the Full-Stack Web Developer Nanodegree at Udacity. When I was younger, I used to express my creativity and thoughts through drawing. As I got older and throughout high school, I taught myself how to use Adobe Photoshop to create layouts, pictures, and other graphic works when Myspace was around and for friends while learning a bit of HTML and CSS along the way. I am the type of person that enjoys creating something and to share them with others because to me, it is very rewarding feeling.<br><br>While I was working full-time, I came to a realization that I was not happy and I was introduced to the idea of coding from my friends and family and therefore, I have been learning and teaching myself computer programming languages with the help of online resources. It's a long time coming but I finally know what I want to do in life and that is to become a Full-Stack Web developer. As a developer, I want to express my way of thinking and creativity through coding and to build amazing web and mobile applications. It would be an incredible journey and experience.    
     <br><br>
-   Website is still in construction
-    </p>
+   Website is still in construction </p>
  <hr class="featurette-divider">
 <img class="featurette-image img-circle img-responsive pull-right" src="">
     <center><h2 class="featurette-heading"> 5<span class="text-muted"> Random Facts</span></h2>    
  <hr class="featurette-divider"></center>
-    <p class="lead">
+    <p>
     1. I work out about 3-4 times a week<br>
     2. I am a huge Sacramento Kings fan<br>
     3. I appreciate all types of music<br>
@@ -301,14 +289,14 @@ $(function() {
         <h2 class="featurette-heading"> Education /<span class="text-muted"> Experience</span></h2>  
  <hr class="featurette-divider">
       </center>
-    <p class="lead">
+    <p>
     1. Knowledge of basic HTML, CSS, Javascript, jQuery and Bootstrap frameworks <br>
     2. Currently taking Full-Stack Web Developer Nanodegree at Udacity<br>
    3. Adobe Photoshop <br>
    4. Freecodecamp and Codecademy (Javascript, Html, Css)
     </p>
         
-       
+      </div>
           </div></div></div></div>  
 
   
@@ -377,8 +365,8 @@ Phone number: (916) 233-6415</h3>
         })
     //]]>
 </script>
-
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript">
             
             (function() {
@@ -396,7 +384,6 @@ Phone number: (916) 233-6415</h3>
                 
                 
             })();
-            
             
             
         </script>    
