@@ -378,6 +378,28 @@ Phone number: (916) 233-6415</h3>
     //]]>
 </script>
 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            (function() {
+                
+                var aboutEl = $('div.about'),
+                    aboutElOffset = aboutEl.offset().top/2,
+                    documentEl = $(document);
+                
+                documentEl.on('scroll', function() {
+                    if ( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden'); 
+                });
+                
+                
+                
+                
+                
+            })();
+            
+            
+            
+        </script>    
 
   </body>
 </html>
@@ -420,16 +442,3 @@ Phone number: (916) 233-6415</h3>
 })();
 </script>
 
-<script>
-  (function(){
-  
-  var aboutEl = $('div.about'),
-  aboutEloffset = aboutEl.offset().top/2,
-  documentEl = $(document);
-
-  documentEl.on('scroll', function() {
-    if ( documentEl.scrollTop() > aboutEloffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden');
-  });
-
-})();
-  </script>
