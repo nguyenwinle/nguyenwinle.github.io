@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
   
@@ -67,8 +66,34 @@
 
 <style>
   
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+/*animation element sliding left*/
+
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
 }
 
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+
+}
             .about {
                 max-width: 900px;
                 margin: 0 auto;
@@ -92,13 +117,11 @@
                 opacity: 0;
                 transform: translate3d(0, 0, 400px) rotateY(40deg);
             }
-
   
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
-
 /* ============================================================
   SECTIONS
 ============================================================ */
@@ -152,11 +175,9 @@ section.module.parallax-3 {
   background-color:  #D3D3D3;
 ;
 }
-
 h2 {
   color: #8A2BE2;
   }
-
   .subject .category-color {
   height: 7px;
   position: absolute;
@@ -164,17 +185,14 @@ h2 {
   left: 0px;
   width: 100%;
 }
-
  .subject.design .category-color,
 .subject.design .icon i {
   background: #c0392b;
 }
-
 .subject.development .category-color,
 .subject.development .icon i {
   background: #16a085;
 }
-
 .subject.photography .category-color,
 .subject.photography .icon i {
   background: #2980b9;
@@ -264,16 +282,20 @@ $(function() {
     <br>
     <div class="row">
       
-<div class="about hidden">
        <center><div class="icon"><i class="fa fa-pencil"></i><h2 class="featurette-heading"> About<span class="text-muted"> Me</span></h2>
          <hr class="featurette-divider"></div></center>
- <p>Hello, I'm Nguyen (Win) from Sacramento, California. I am an aspiring Full-Stack Web Developer currently taking the Full-Stack Web Developer Nanodegree at Udacity. When I was younger, I used to express my creativity and thoughts through drawing. As I got older and throughout high school, I taught myself how to use Adobe Photoshop to create layouts, pictures, and other graphic works when Myspace was around and for friends while learning a bit of HTML and CSS along the way. I am the type of person that enjoys creating something and to share them with others because to me, it is a very rewarding feeling.<br><br>While I was working full-time, I came to a realization that I was not happy and I was introduced to the idea of coding from my friends and family and therefore, I have been learning and teaching myself computer programming languages with the help of online resources. It's a long time coming but I finally know what I want to do in life and that is to become a Full-Stack Web developer. As a developer, I want to express my way of thinking and creativity through coding and to build amazing web and mobile applications. It would be an incredible journey and experience.    
+   <div class="animation-element slide-left">
+ <p>Hello, I'm Nguyen (Win) from Sacramento, California. I am an aspiring Full-Stack Web Developer currently taking the Full-Stack Web Developer Nanodegree at Udacity. When I was younger, I used to express my creativity and thoughts through drawing. As I got older and throughout high school, I taught myself how to use Adobe Photoshop to create layouts, pictures, and other graphic works when Myspace was around and for friends while learning a bit of HTML and CSS along the way. I am the type of person that enjoys creating something and to share them with others because to me, it is a very rewarding feeling.</p></div><br><br> 
+    <div class="animation-element slide-left">
+  <p> While I was working full-time, I came to a realization that I was not content and I was introduced to the idea of coding from my friends and family and therefore, I have been learning and teaching myself computer programming languages with the help of online resources. It's a long time coming but I finally know what I want to do in life and that is to become a Full-Stack Web developer. As a developer, I want to express my way of thinking and creativity through coding and to build amazing web and mobile applications. It would be an incredible journey and experience.   </p> 
     <br><br>
-   Website is still in construction </p>
+   <p>Website is still in construction </p>
+  </div>
  <hr class="featurette-divider">
 <img class="featurette-image img-circle img-responsive pull-right" src="">
     <center><h2 class="featurette-heading"> 5<span class="text-muted"> Random Facts</span></h2>    
  <hr class="featurette-divider"></center>
+  <div class="animation-element slide-left">
     <p>
     1. I work out about 3-4 times a week<br>
     2. I am a huge Sacramento Kings fan<br>
@@ -281,7 +303,7 @@ $(function() {
     4. I am left handed<br>
     5. I am honest/humble
    </p>
-   
+  </div>
   
  <hr class="featurette-divider">   
 <img class="featurette-image img-circle img-responsive pull-left" src="">
@@ -289,13 +311,14 @@ $(function() {
         <h2 class="featurette-heading"> Education /<span class="text-muted"> Experience</span></h2>  
  <hr class="featurette-divider">
       </center>
+  <div class="animation-element slide-left">
     <p>
     1. Knowledge of basic HTML, CSS, Javascript, jQuery and Bootstrap frameworks <br>
     2. Currently taking Full-Stack Web Developer Nanodegree at Udacity<br>
    3. Adobe Photoshop <br>
-   4. Freecodecamp and Codecademy (Javascript, Html, Css)
+   4. Freecodecamp and Codecademy (Javascript, Html, CSS)
     </p>
-        
+  </div>
       </div>
           </div></div></div></div>  
 
@@ -411,21 +434,44 @@ Phone number: (916) 233-6415</h3>
 
 <script>
 (function(){
-
   var parallax = document.querySelectorAll(".parallax"),
       speed = 0.5;
-
   window.onscroll = function(){
     [].slice.call(parallax).forEach(function(el,i){
-
       var windowYOffset = window.pageYOffset,
           elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-
       el.style.backgroundPosition = elBackgrounPos;
-
     });
   };
-
 })();
 </script>
+  
+<style>
+  var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+ 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+ 
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('in-view');
+    } else {
+      $element.removeClass('in-view');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+  </style>
 
