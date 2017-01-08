@@ -532,9 +532,15 @@ $window.trigger('scroll');
     </script>
 	
 	<script>
-$('#myModal').on('shown.bs.modal', function () {
+		$(document).ready(function(){
+    //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+   $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').focus()
-})
+});
+});
+		
+
 </script>
 	
  </body>
