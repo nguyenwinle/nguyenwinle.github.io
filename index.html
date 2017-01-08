@@ -385,6 +385,15 @@ $(function() {
   <div class ="row">
 
 	  <center>
+		  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><img src="./bootstrap-prestructure_files/555x300"></button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <img src="./bootstrap-prestructure_files/555x300">
+    </div>
+  </div>
+</div>
 	<a href="#"><button>Project 1</button></a>
 <a href="#"><button>Project 2</button></a>
 	  <a href="#"><button>Project 3</button></a>
@@ -521,6 +530,13 @@ $window.trigger('scroll');
     });
 });
     </script>
+	
+	<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+	
  </body>
 </html>
 
