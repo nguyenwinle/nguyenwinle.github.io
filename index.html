@@ -56,7 +56,7 @@ footer {
    background: lightgray;
 }
 	
-.flyer {
+.pic {
   border-radius: 50%;
 }
 	
@@ -253,6 +253,7 @@ $(function() {
 <div id="preloader">
   <div id="status">&nbsp;</div>
 </div>
+  <div id="page0">
 <div class="top">
 <body data-spy="scroll" data-target=".navbar">
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -267,7 +268,7 @@ $(function() {
    
    
     <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="#page0">Home</a></li>
       <li class="active"><a href="#page1">About Me</a></li>
       <li><a href="#page2">Projects</a></li>
       <li><a href="#page3">Blog</a></li>
@@ -303,7 +304,7 @@ $(function() {
   </div>
  <hr class="featurette-divider">
 <img class="featurette-image img-circle img-responsive pull-right" src="">
-    <center><h2 class="featurette-heading"> Random<span class="text-muted"> Facts</span></h2>    
+    <center><h3 class="featurette-heading"> Random<span class="text-muted"> Facts</span></h3>    
  <hr class="featurette-divider"></center>
   <div class="animation-element slide-left">
     <p>
@@ -320,20 +321,18 @@ $(function() {
  <hr class="featurette-divider">   
 <img class="featurette-image img-circle img-responsive pull-left" src="">
     <center>
-        <h2 class="featurette-heading"> Education /<span class="text-muted"> Experience</span></h2>  
+        <h3 class="featurette-heading"> Education /<span class="text-muted"> Experience</span></h3>  
  <hr class="featurette-divider">
       </center>
   <div class="animation-element slide-left">
     <p>
     1. Knowledge of basic HTML, CSS, Javascript, Python, jQuery and Bootstrap frameworks <br>
     2. Currently taking Full-Stack Web Developer Nanodegree at Udacity<br>
-   3. Adobe Photoshop <br>
-   4. Freecodecamp and Codecademy (Javascript, Html, CSS)<br>
-   5. Git/Github<br>
-   6. Developer Tools
+   3. Working knowledge of Git/Github and Developer Tools<br>
+      4. Proficient in Adobe Photoshop
     </p>
   </div>
-      </div>
+  </div>
           </div></div></div>  
 
   
@@ -354,227 +353,66 @@ $(function() {
       <div class="container"> 
 	      <center> <div class="icon"><i class="fa fa-cogs"></i><h2 class="featurette-heading">Featured<span class="text-muted"> Work</span></h2></div></center>
 	 <hr class="featurette-divider">
-  <div class ="row">
-  <center> <h3>Projects coming soon</h3><br></center>
+  <center> <h4>Projects coming soon</h4><br></center>
+        <div class ="row">
 	  <center>
-	-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Project 1</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Project name</h4>
+      <div class = "col-md-4">
+        <a href="index.html"><img class="pic" src="http://placehold.it/250x250" alt="Project 1"></a>
+        Movie Trailer Website
+          </div>
+         
+        <div class = "col-md-4">
+          <a href="index.html"><img class="pic" src="http://placehold.it/250x250" alt="Project 2"> </a><br>
+          Linux Server Configuration
+            </div>
+        
+          <div class = "col-md-4">
+            <a href="index.html"><img class ="pic" src="http://placehold.it/250x250" alt="Project 3"> </a><br>
+            Multi User Blog
+              </div>
+   
+          <div class = "col-md-4">
+            <a href="index.html"><img class ="pic" src="http://placehold.it/250x250" alt="Project 4"></a>
+           Tournament Results
+              </div>
+            <div class = "col-md-4">
+              <a href="index.html"><img class="pic" src="http://placehold.it/250x250" alt="Project 5"></a><br>
+     Item Catalog
       </div>
-      <div class="modal-body">
-        <p>Description of project</p>
-        <a href="#"><button>Project #</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-		  -<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Project 2</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Project name</h4>
-      </div>
-      <div class="modal-body">
-        <p>Description of project</p>
-        <a href="#"><button>Project #</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-		  -<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Project 3</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Project name</h4>
-      </div>
-      <div class="modal-body">
-        <p>Description of project</p>
-        <a href="#"><button>Project #</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-		  -<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Project 4</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Project name</h4>
-      </div>
-      <div class="modal-body">
-        <p>Description of project</p>
-        <a href="#"><button>Project #</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-		  -<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Project 5</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Project name</h4>
-      </div>
-      <div class="modal-body">
-        <p>Description of project</p>
-        <a href="#"><button>Project #</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-		  -<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Project 6</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Project name</h4>
-      </div>
-      <div class="modal-body">
-        <p>Description of project</p>
-        <a href="#"><button>Project #</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-		  -<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Project 7</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Project name</h4>
-      </div>
-      <div class="modal-body">
-        <p>Description of project</p>
-        <a href="#"><button>Project #</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-		  -<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Project 8</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Project name</h4>
-      </div>
-      <div class="modal-body">
-        <p>Description of project</p>
-        <a href="#"><button>Project #</button></a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
+              <div class = "col-md-4">
+                      <a href="index.html"><img class = "pic" src="http://placehold.it/250x250" alt="Project 6"></a>
+                Neighborhood Map
+                        
+                        </div>
+      
+                        </div>
 	  </center>
 	   <hr class="featurette-divider">   
-    <center> <h3>Some graphic work using Adobe Photoshop</h3><br></center>
+    <center> <h4>Some graphic work using Adobe Photoshop</h4><br></center>
+                    <div class ="row">
     <div class = "col-md-4">
   <a class="fancybox" rel="gallery1" href="https://s23.postimg.org/ds376wt2z/rushlphie.jpg">
-	<img class= "flyer" src="https://s29.postimg.org/n1bw52n53/flyer1.jpg" alt="" />
+	<img class= "pic" src="https://s29.postimg.org/n1bw52n53/flyer1.jpg" alt="" />
       </a></div>
     <div class = "col-md-4">
 <a class="fancybox" rel="gallery1" href="https://s29.postimg.org/jpohmyssn/rushparty_copy_1.jpg">
-	<img class= "flyer" src="https://s23.postimg.org/ofngrvvwb/flyer2.jpg" alt="" />
+	<img class= "pic" src="https://s23.postimg.org/ofngrvvwb/flyer2.jpg" alt="" />
       </a></div>
     <div class = "col-md-4">
 <a class="fancybox" rel="gallery1" href="https://s24.postimg.org/uqwmmjvyt/highlighter.jpg">
-	<img class= "flyer" src="https://s30.postimg.org/6per5ewr5/flyer3.jpg" alt="" />
+	<img class= "pic" src="https://s30.postimg.org/6per5ewr5/flyer3.jpg" alt="" />
       </a></div>
     <div class = "col-md-4">
 <a class="fancybox" rel="gallery1" href="https://s30.postimg.org/bu9ofdrb5/lrglfeeefront.jpg">
-	<img class="flyer" src="https://s24.postimg.org/9pv6wbfp1/flyer4.jpg" alt="" />
+	<img class="pic" src="https://s24.postimg.org/9pv6wbfp1/flyer4.jpg" alt="" />
       </a>  </div>
       <div class = "col-md-4">
 <a class="fancybox" rel="gallery1" href="https://s30.postimg.org/tfx03u5f5/870732700_orig.jpg">
-	<img class= "flyer" src="https://s28.postimg.org/ce20bw00t/flyer5.jpg" alt="" />
+	<img class= "pic" src="https://s28.postimg.org/ce20bw00t/flyer5.jpg" alt="" />
       </a>  </div>
     <div class = "col-md-4">
 <a class="fancybox" rel="gallery1" href="https://s27.postimg.org/pvty12cj7/292601877_orig.jpg">
-	<img class="flyer" src="https://s24.postimg.org/vmfqsjlcl/flyer6.jpg" alt="" />
+	<img class="pic" src="https://s24.postimg.org/vmfqsjlcl/flyer6.jpg" alt="" />
       </a>  </div>
 	</div></div></div>
     </section>
@@ -609,6 +447,7 @@ $(function() {
     <span class="fa fa-facebook"></span>
   </a>
   <a href="https://twitter.com/ns0le" class="btn btn-social-icon btn-twitter">
+    
     <span class="fa fa-twitter"></span>
 		</a></h3>
 	</div></div>
@@ -718,5 +557,5 @@ $window.trigger('scroll');
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>   
 	
 <!-- References: https://github.com/fancyapps/fancyBox -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">   
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"> 
   
