@@ -418,7 +418,14 @@ h2 {
          <h4>All rights reserved. Responsive Web design created by<a href="http://nguyenwinle.github.io"> Nguyen Le</h4>
       </footer>
         
- <script>       
+ <script>  
+  $(window).load(function() { 
+  $('#status').fadeOut(); 
+  $('#preloader').delay(350).fadeOut('slow'); 
+  $('body').delay(350).css({'overflow':'visible'});
+  })	 
+	 
+	 
  $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
