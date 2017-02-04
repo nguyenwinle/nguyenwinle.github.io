@@ -202,7 +202,16 @@ h2 {
    </head>
   
  
-   <body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar">
+<script type="text/javascript">
+
+  $(window).load(function() { 
+  $('#status').fadeOut(); 
+  $('#preloader').delay(350).fadeOut('slow'); 
+  $('body').delay(350).css({'overflow':'visible'});
+  })
+</script> 
+	   
       <div id="preloader">
       </div>
       <div id="page0"></div>
@@ -419,13 +428,7 @@ h2 {
       </footer>
         
  <script>  
-  $(window).load(function() { 
-  $('#status').fadeOut(); 
-  $('#preloader').delay(350).fadeOut('slow'); 
-  $('body').delay(350).css({'overflow':'visible'});
-  })	 
-	 
-	 
+ 
  $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
