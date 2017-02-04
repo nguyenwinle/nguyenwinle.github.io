@@ -43,12 +43,191 @@
 	  
      
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">     
-
+	
+<style>
+.text {
+  color: #8A2BE2;
+}
+footer {
+   position: relative;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background: lightgray;
+  font-family: 'Kalam', cursive;
+}
+	
+.pic {
+  border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+	
+.fancybox {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+}
+.fancybox:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+ 
+}
+#change div:hover{
+  	opacity:5;
+  cursor:pointer;
+}
+  
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+/*animation element sliding left*/
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+            .about {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 100px 0;
+                transform-style: preserve-3d;
+                transform: perspective(800px);
+            }
+            .about .featurette-heading {
+                text-transform: uppercase;
+                font-size: 50px;
+                font-weight: 400;
+            }
+            .about .featurette-heading, .about p {
+                transition: all 1s ease;
+            }
+            .about.hidden .featurette-heading {
+                opacity: 0;
+                transform: translate3d(0, 0, 400px) rotateY(-40deg);
+            }
+            .about.hidden p {
+                opacity: 0;
+                transform: translate3d(0, 0, 400px) rotateY(40deg);
+            }
+  
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Kalam', cursive;
+}
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-family: 'Kalam', cursive;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Kalam', cursive;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+  font-family: 'Kalam', cursive;
+}
+section.module.parallax {
+  padding: 300px 0;
+  background-position: 0 0;
+  font-family: 'Kalam', cursive;
+}
+section.module.parallax h1 {
+  color: white;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white;
+  font-family: 'Kalam', cursive;
+}
+section.module.parallax-1 {
+  background-image: url("https://s29.postimg.org/q5ua91nuv/nlbackground1.jpg");
+	background-color: lightgray;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+section.module.parallax-2 {
+  background-image: url("");
+  background-color:  	 #D3D3D3;
+  background-size: 120%;
+  background-position: center center;
+  color: #8A2BE2;
+ 
+  
+}
+section.module.parallax-3 {
+  background-image: url("");
+  background-color:  #D3D3D3;
+}
+h2 {
+  color: #8A2BE2;
+  }
+ 
+  
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+    font-family: 'Kalam', cursive;
+  }
+  section.module p {
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+  }
+  section.module.parallax {
+    padding: 300px 0;
+    font-family: 'Kalam', cursive;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+    font-family: 'Kalam', cursive;
+  }
+}
+@media all and (min-width: 1024px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+</style>
+	
 </head>
 
 
 <body>
-	
+
 
 <script>
 $(function() {
