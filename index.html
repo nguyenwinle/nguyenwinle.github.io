@@ -322,7 +322,26 @@ h2 {
 
 
    <body>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 
+      <div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>      
 <div id="page0">
       
          <nav class="navbar navbar-default navbar-fixed-top">
@@ -593,8 +612,10 @@ h2 {
       <div class="container">
          <a href="#page0"><h4><span class="glyphicon glyphicon-chevron-up"></h4></span>
         </a>
+<div class = "row">
    <h4>All rights reserved. Responsive Web design created by<a href="http://nguyenwinle.github.io"> Nguyen Le</a></h4>
 </div>
+         </div>
      </footer>
 
 <script>
