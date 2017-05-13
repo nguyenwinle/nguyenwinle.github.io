@@ -267,20 +267,10 @@ section.module.content-3 {
 }
 
 
-section.module.content {
+.icons {
     text-align: center;
-    padding: 40px 0;
-    font-family: 'Kalam', cursive;
-    background: linear-gradient(
-    to bottom, 
-    white 0%, 
-    white 50%, 
-    white 50%, 
-    lightgray 100%
-  );
 
 }
-
 
 
 section.module.parallax {
