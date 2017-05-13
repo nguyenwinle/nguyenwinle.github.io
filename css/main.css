@@ -11,15 +11,6 @@ html {
 body {
         background-color : #8A2BE2;
 }
-
-.navbar-brand {
-    filter: gray;
-    /* IE6-9 */
-    
-    -webkit-filter: grayscale(1);
-    /* Google Chrome, Safari 6+ & Opera 15+ */
-    
-}
    
 i {
     font-size: 60px;
@@ -80,6 +71,15 @@ footer {
     height: 180px;
 
 
+}
+
+.navbar-brand {
+    filter: gray;
+    /* IE6-9 */
+    
+    -webkit-filter: grayscale(1);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    
 }
 
 .center-pic {
@@ -224,6 +224,7 @@ section.module p:last-child {
     margin-bottom: 0;
   
 }
+
 section.module.content {
     padding: 40px 0;
     font-family: 'Kalam', cursive;
@@ -264,6 +265,23 @@ section.module.content-3 {
   -webkit-backface-visibility: hidden;
 
 }
+
+
+section.module.content {
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Kalam', cursive;
+    background: linear-gradient(
+    to bottom, 
+    white 0%, 
+    white 50%, 
+    white 50%, 
+    lightgray 100%
+  );
+
+}
+
+
 
 section.module.parallax {
     padding: 250px 0;
