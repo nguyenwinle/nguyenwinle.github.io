@@ -90,8 +90,7 @@ footer {
 
 }
 
-
-.fancybox {
+.ps {
     filter: gray;
     /* IE6-9 */
     
@@ -104,7 +103,7 @@ footer {
     margin-bottom: 20px;
   
 }
-.fancybox:hover {
+.ps:hover {
     filter: none;
     /* IE6-9 */
     
