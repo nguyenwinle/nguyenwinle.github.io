@@ -1,3 +1,4 @@
+
 (function(){
   var parallax = document.querySelectorAll(".parallax"),
       speed = 0.5;
@@ -14,7 +15,7 @@
             $('#status').fadeOut(4000); // will first fade out the loading animation
             $('#preloader').delay(4000).fadeOut('slow'); // will fade out the white DIV that covers the website.
             $('body').delay(4000).css({'overflow':'visible'});
-        })
+        });
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -58,8 +59,19 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+    
+    
+  $(document).ready(function(){
+    //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+});
 
 
+    
 $(document).ready(function(){
     $(".btn-info").click(function(){
         $(".collapse").collapse('toggle');
@@ -77,4 +89,4 @@ $(function() {
 			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
 			$('#imagemodal').modal('show');   
 		});		
-});    
+}); 
