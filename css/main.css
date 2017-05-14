@@ -148,11 +148,11 @@ footer {
     -webkit-transition: all 500ms linear;
     -o-transition: all 500ms linear;
     transition: all 500ms linear;
-    -moz-transform: translate3d(-100px, 0px, 0px);
-    -webkit-transform: translate3d(-100px, 0px, 0px);
-    -o-transform: translate(-100px, 0px);
-    -ms-transform: translate(-100px, 0px);
-    transform: translate3d(-100px, 0px, 0px);
+    -moz-transform: translate3d(0px, 100px, 0px);
+    -webkit-transform: translate3d(-100px, 100px, 0px);
+    -o-transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 1000px);
+    transform: translate3d(0px, 100px, 0px);
   
 }
 .animation-element.slide-left.in-view {
