@@ -64,7 +64,7 @@ $window.trigger('scroll');
   $(document).ready(function(){
     //FANCYBOX
     //https://github.com/fancyapps/fancyBox
-    $(".fancybox").fancybox({
+    $(".ps").fancybox({
         openEffect: "none",
         closeEffect: "none"
     });
