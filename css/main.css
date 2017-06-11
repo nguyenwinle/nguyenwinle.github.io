@@ -237,6 +237,23 @@ color: black;
 a .fa:hover {
     color: #8A2BE2;
 }
+
+a {
+    color: #8A2BE2;
+
+}
+
+a:hover {
+    color: black;
+}
+
+.btn {
+    color: black;
+}
+
+.btn:hover {
+    color: #8A2BE2;
+}
 /* ============================================================
   SECTIONS
 ============================================================ */
