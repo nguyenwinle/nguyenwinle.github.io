@@ -9,13 +9,19 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script> 
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
-    <link href="https://fonts.googleapis.com/css?family=Kalam:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="font/font-mfizz.css">
     <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style.css">
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
 </head>
@@ -67,6 +73,20 @@
 <div id="page1">
 <section class="module content">
 <div class="container">
+<div class= "row">
+
+<div class="col-md-3">
+ <div class="animation-element slide-left">
+<h2><i class="icon-bomb"></i>API REQUEST</h2>
+<hr>
+
+<p>
+work in progress
+</p>
+</div>
+<br>
+</div>
+
 <div class="col-md-6">
  <div class="animation-element slide-left">
 <h2><i class="icon-fire-alt"></i>ABOUT ME</h2>
@@ -82,71 +102,95 @@ Feel free to take a look at the projects that I have built down below or view my
 <br>
 </div>
 
-<div class="col-md-6">
-<div class="animation-element slide-left">
-<h2><i class="icon-line-graph"></i>SKILLS</h2>
+<div class="col-md-3">
+ <div class="animation-element slide-left">
+<h2><i class="icon-ghost"></i>RANDOM FACTS</h2>
 <hr>
-<div class = "col-md-4">
+
+<p>
+1. I am left-handed<br>
+2. Huge Sacramento Kings Fan<br>
+3. Work out about 4 times a week<br>
+4. Currently located in Sacramento, CA<br>
+5. Listen to all kinds of music<br>
+6. Experience using photoshop<br>
+7. I used to draw and paint<br>
+</p>
+</div>
+<br>
+</div>
+
+</div>
+</div>
+</section>
+</div>
+
+<section class="skills">
+<div class="container"> 
+<div class="col-md-3">
+  <h2><i class="icon-line-graph"></i>SKILLS AT A GLANCE:</h2>
+</div>
+<hr>
+<div class = "col-md-1">
 HTML5
 <br>
 <span class="glyph-sample"><i class="icon-html5-alt"></i></span>
 </div>
 
-<div class = "col-md-4">
+<div class = "col-md-1">
 CSS3
 <br>
 <span class="glyph-sample"><i class="icon-css3-alt"></i></span>
 </div>
 
 
-<div class = "col-md-4">
+<div class = "col-md-1">
 BOOTSTRAP
 <br>
 <span class="glyph-sample"><i class="icon-bootstrap"></i></span>
 </div>
 
-<div class = "col-md-4">
+<div class = "col-md-1">
 JAVASCRIPT
 <br>
 <span class="glyph-sample"><i class="icon-javascript-alt"></i></span>
 </div>
 
-<div class = "col-md-4">
+<div class = "col-md-1">
 NODEJS
 <br>
 <span class="glyph-sample"><i class="icon-nodejs"></i></span>
 </div>
 
-<div class = "col-md-4">
+<div class = "col-md-1">
 PYTHON
 <br>
 <span class="glyph-sample"><i class="icon-python"></i></span>
 </div>
 
 
-<div class = "col-md-4">
+<div class = "col-md-1">
 MYSQL
 <br>
 <span class="glyph-sample"><i class="icon-mysql-alt"></i></span>
 </div>
 
 
-<div class = "col-md-4">
+<div class = "col-md-1">
 POSTGRES
 <br>
 <span class="glyph-sample"><i class="icon-postgres"></i></span>
 </div>
 
-<div class = "col-md-4">
+<div class = "col-md-1">
 GITHUB
 <br>
 <span class="glyph-sample"><i class="fa fa-github fa-5x"></i></span>
-</div>
-</div>
+
 </div>
 </div>
 </section>
-</div>
+
 
 <div id="page2">
 <section class="module content-2">
@@ -154,7 +198,6 @@ GITHUB
 <h2>PROJECTS<i class="icon-looking"></i></h2>
 <hr>
    <div class ="row">
- <div class="animation-element slide-left">
    <div class = "col-md-4">
         <a href="https://github.com/nguyenwinle/movie-trailer-website" target="_blank"><img class="pic" src="https://s21.postimg.org/4p7tx1ebb/trailer_2.png" alt="Project 1"></a>
         <br>
@@ -164,9 +207,9 @@ This project is a movie trailer web page that uses python to store a list of mov
   </div>
          <br>
          <br>
-          </div>
+
  </div>
-  <div class="animation-element slide-left">        
+       
         <div class = "col-md-4">
           <a href="index.html"><img class="pic" src="https://s1.postimg.org/rrhpekrz3/resume_2.png" alt="Project 2"> </a>
           <br>
@@ -176,9 +219,9 @@ Project not yet completed..
   </div>
       <br>
       <br>
-            </div>
+     
      </div>
-      <div class="animation-element slide-left">   
+  
           <div class = "col-md-4">
                   <a href="https://github.com/nguyenwinle/multiuserblog" target="_blank"><img class ="pic" src="https://s15.postimg.org/g8usjl20b/blog.png" alt="Project 2"></a>
          
@@ -189,12 +232,11 @@ This is a multi-user blog using google app engine that allows users to register/
   </div>
         <br>
         <br>
-              </div>
+      
            </div>
          </div>
 
    <div class="row">
-     <div class="animation-element slide-left">
           <div class = "col-md-4">
                   <a href="https://github.com/nguyenwinle/Tournament-Results" target="_blank"><img class ="pic" src="https://s28.postimg.org/mw6v8ua3x/sql_2.png" alt="Project 3"></a>
             <br>
@@ -203,10 +245,9 @@ This is a multi-user blog using google app engine that allows users to register/
 The idea behind this database project on a swiss tournament is that we want our code to match players of the same or close to the number of wins a player has. Each player has a fair chance to play against different players of the same level in several different rounds and are not eliminated from play. The winner of the tournament will be the player that achieves the most wins.
   </div>
         <br>
-        <br>
-              </div>
+     
             </div>
-             <div class="animation-element slide-left">
+    
             <div class = "col-md-4">
               <a href="https://github.com/nguyenwinle/itemcatalog" target="_blank"><img class="pic" src="https://s28.postimg.org/vb8v00arh/item.png" alt="Project 5"></a>
               <br>
@@ -219,8 +260,7 @@ Also implemented various HTTP methods and how these methods relate to CRUD (crea
           <br>
           <br>
       </div>
-    </div>
-     <div class="animation-element slide-left">
+
               <div class = "col-md-4">
                       <a href="https://github.com/nguyenwinle/google_map" target="_blank"><img class = "pic" src="https://s1.postimg.org/ww3muiu8f/map_2.png" alt="Project 6"></a>
                       <br>
@@ -230,32 +270,49 @@ This project is an interactive map of some places to go to in the night time in 
   </div>
             <br>
             <br>
-                         </div>
-                         </div>
 </div>
-    </div>
+</div>
+
+</div>
 </section>
 </div>
 
 <section class="module content-3">
 </section>
+
 <div id="page4">
 <section class="module content">
 
 <div class = "container"> 
 <div class="row">
-  <div class = "col-md-12">
-     <h2><i class="fa fa-address-book fa-1x"></i>CONTACT</h2>
-    <hr>   
-<h4>Email: Ucnguyenle@gmail.com<br>
+  <div class = "col-md-4">
+     <h2><i class="fa fa-address-book fa-1x"></i>CONTACT:</h2>
+ </div>
+
+<div class = "col-md-4"> 
+<br> 
+<h4>
+Email: Ucnguyenle@gmail.com<br>
    Phone number: (916) 233-6415
  </h4>
    </div>
-
+<div class="col-md-4">
+  <br>
+  <h4>
+ <a href="https://www.facebook.com/" target="blank">
+                  <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.twitter.com/" target="blank">
+                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.instagram.com/winleezy" target="blank">
+                  <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                  </a>
+                </h4>
 
    </div>
      </div>
-
+</div>
 
 </section>
  </div>  
@@ -268,12 +325,11 @@ This project is an interactive map of some places to go to in the night time in 
    <p class= "bottom">All rights reserved. Responsive Web design created by<a href="http://nguyenwinle.github.io"> Nguyen Le</a></p>
    </div>     
      </footer>
-
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
