@@ -14,7 +14,7 @@ body {
    
 i {
     font-size: 60px;
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
 }  
 
 .glyph-sample:hover { 
@@ -48,12 +48,13 @@ body {
     color: #8A2BE2;
   
 }
+
 footer {
     position: relative;
     bottom: 0;
     width: 100%;
     background: lightgray;
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
 
   
 }
@@ -149,9 +150,9 @@ footer {
     -o-transition: all 500ms linear;
     transition: all 500ms linear;
     -moz-transform: translate3d(0px, 100px, 0px);
-    -webkit-transform: translate3d(-100px, 100px, 0px);
+    -webkit-transform: translate3d(0px, 100px, 0px);
     -o-transform: translate(0px, 100px);
-    -ms-transform: translate(0px, 1000px);
+    -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 100px, 0px);
   
 }
@@ -194,8 +195,9 @@ footer {
   
 }
 .container {
+    width: 80%;
 
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
   
 }
 
@@ -207,7 +209,7 @@ footer {
     background: black;
     border-bottom: #8A2BE2 3px solid;
     text-align: center;
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
     color: white;
   -webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
@@ -218,6 +220,23 @@ footer {
   backface-visibility: initial;
 }
 
+.skills {
+    background: black;
+    border-top: #8A2BE2 10px solid;
+    border-bottom: #8A2BE2 10px solid;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    color: white;
+  
+}
+
+a .fa {
+color: black;
+}
+
+a .fa:hover {
+    color: #8A2BE2;
+}
 /* ============================================================
   SECTIONS
 ============================================================ */
@@ -228,15 +247,13 @@ section.module:last-child {
 section.module h2 {
     margin-bottom: 0px;
     font-size: 30px;
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
     text-align: center;
   
 }
 section.module p {
     margin-bottom: 40px;
-    font-size: 16px;
-    font-weight: 300;
-    font-family: 'Kalam', cursive;
+        font-family: 'Bangers', cursive;
   
 }
 section.module p:last-child {
@@ -246,7 +263,7 @@ section.module p:last-child {
 
 section.module.content {
     padding: 40px 0;
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
     background: linear-gradient(
     to bottom, 
     white 0%, 
@@ -259,7 +276,7 @@ section.module.content {
 
 section.module.content-2 {
     padding: 40px 0;
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
     color: white;
     border-bottom: #8A2BE2 3px solid;
     background: linear-gradient(
@@ -274,7 +291,7 @@ section.module.content-2 {
 
 section.module.content-3 {
     padding: 10px 0;
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
     background: black;
   -webkit-transform: skewY(2.5deg);
   -moz-transform: skewY(2.5deg);
@@ -295,7 +312,7 @@ section.module.content-3 {
 section.module.parallax {
     padding: 250px 0;
     background-position: 0 0;
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
   
 }
 
@@ -307,7 +324,7 @@ section.module.parallax h1 {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0 0 10px white;
-    font-family: 'Kalam', cursive;
+    font-family: 'Bangers', cursive;
   
 }
 section.module.parallax-1 {
@@ -340,28 +357,28 @@ h2 {
 @media all and (min-width: 600px) {
     section.module h2 {
         font-size: 42px;
-        font-family: 'Kalam', cursive;
+        font-family: 'Bangers', cursive;
       
     }
-  
+
   
     section.module p {
-        font-size: 20px;
-        font-family: 'Kalam', cursive;
+        font-size: 14px;
+        font-family: 'Bangers', cursive;
       
     }
   
   
     section.module.parallax {
         padding: 250px 0;
-        font-family: 'Kalam', cursive;
+        font-family: 'Bangers', cursive;
       
     }
   
   
     section.module.parallax h1 {
         font-size: 96px;
-        font-family: 'Kalam', cursive;
+        font-family: 'Bangers', cursive;
       
     }  
 }
@@ -370,4 +387,11 @@ h2 {
         font-size: 160px;
       
     }
+}
+
+@media all and (max-width: 600px) {
+     .container {
+        width: 100%;
+      
+    }  
 }
