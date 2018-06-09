@@ -15,6 +15,7 @@ li {
 	padding:0;
 	margin:0;
 }
+
 nav {
 	text-align:center;
 	width:100%;
@@ -199,13 +200,13 @@ nav ul li a:hover {
 		margin:5px 0;
 	}
 }
-.content {
+/* .content {
 	width:100%;
 	margin-top:200px;
 	font-size:20px;
 	color#333;
 	text-align: center;
-}
+} */
 
 body {
     font-family: 'Bangers', cursive;
@@ -332,3 +333,109 @@ body {
   .container {
       background-color: white;
   }
+
+  .clearfix::after {
+    content:  "";
+    display: block;
+    clear: both;
+}
+
+.box1 {
+	background-color: white;
+	height: 400px;
+	  width: 25%;
+	  float: left;
+	border: solid black 1px;
+  }
+
+.box1:hover {
+	background-color: black;
+}
+
+.box2 {
+	background-color: white;
+	height: 400px;
+	width: 25%;
+	float: left;
+	border: solid black 1px;
+
+}
+
+.box2:hover {
+	background-color: black;
+}
+
+.box3 {
+	background-color: white;
+	height: 400px;
+	width: 25%;
+	float: left;
+	border: solid black 1px;
+}
+
+.box3:hover {
+	background-color: black;
+}
+
+.box4 {
+	background-color: white;
+	height: 400px;
+	width: 25%;
+	float: left;
+	border: solid black 1px;
+}
+
+.box4:hover {
+	background-color: black;
+}
+
+.box5 {
+	background-color: white;
+	height: 400px;
+	width: 25%;
+	float: left;
+	border: solid black 1px;
+}
+
+.box5:hover {
+	background-color: black;
+}
+
+.box6 {
+	background-color: white;
+	height: 400px;
+	width: 25%;
+	float: left;
+	border: solid black 1px;
+}
+
+.box6:hover {
+	background-color: black;
+}
+
+.box7 {
+	background-color: white;
+	height: 400px;
+	width: 25%;
+	float: left;
+	border: solid black 1px;
+
+}
+
+.box7:hover {
+	background-color: black;
+}
+
+.box8 {
+	background-color: white;
+	height: 400px;
+	width: 25%;
+	float: left;
+	border: solid black 1px;
+
+}
+
+
+.box8:hover {
+	background-color: black;
+}
