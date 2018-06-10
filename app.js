@@ -1,5 +1,5 @@
 
-$('.carousel').carousel()
+
 
 $(document).ready(function(){
     $(".button a").click(function(){
