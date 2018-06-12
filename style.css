@@ -709,12 +709,6 @@ button {
   
 
 @media screen and (max-width:48em) {
-	.top {
-		background-image: url("https://amazingpict.com/wp-content/uploads/2016/12/purple_color_burst-wallpaper-1600x900.jpg");
-		background-size: cover;
-		background-attachment: fixed;
-	
-	}
 
 	.wrap ul.wrap-nav>li {
 		width:100%;
