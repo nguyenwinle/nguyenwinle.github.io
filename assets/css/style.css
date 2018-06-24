@@ -1,6 +1,12 @@
-body {
-    color : white;
+html {
+    background-color: #1a1a1d;
+
 }
+
+body { 
+    color : white;
+
+ }
 
 h2 {
     color: white;
@@ -49,3 +55,17 @@ hr {
     
 }
 
+.progress-bar-color {
+    background-color: #c3073f !important;
+}
+
+@media screen and (max-width:48em) {
+    .nav-footer {
+        display: none;
+    }
+
+    .col-md-1 {
+        clear: left;
+    }
+	
+}

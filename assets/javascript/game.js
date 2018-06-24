@@ -1,6 +1,12 @@
 
 // when our html and css is loaded on page, we then run our js
+$(function() { 
+    $("#one").addClass("progress-bar-color");
+
+ });
+
 $(document).ready(function() {
+     
     // create an array for our alphabet;
     var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
     // set a random letter to a variable
@@ -68,40 +74,40 @@ $(document).ready(function() {
         }
 
         if (guessLetters.length === 0) {
-            $(".guesses").css("width", "100%");
+            $(".progress-bar").css("width", "100%");
         }
 
         if (guessLetters.length === 1) {
-            $(".guesses").css("width", "90%");
+            $(".progress-bar").css("width", "90%");
         }
         if (guessLetters.length === 2) {
-            $(".guesses").css("width", "80%");
+            $(".progress-bar").css("width", "80%");
         }
         if (guessLetters.length === 3) {
-            $(".guesses").css("width", "70%");
+            $(".progress-bar").css("width", "70%");
         }
         if (guessLetters.length === 4) {
-            $(".guesses").css("width", "60%");
+            $(".progress-bar").css("width", "60%");
         }
         if (guessLetters.length === 5) {
-            $(".guesses").css("width", "50%");
+            $(".progress-bar").css("width", "50%");
         }
         if (guessLetters.length === 6) {
-            $(".guesses").css("width", "40%");
+            $(".progress-bar").css("width", "40%");
         }
         if (guessLetters.length === 7) {
-            $(".guesses").css("width", "30%");
+            $(".progress-bar").css("width", "30%");
         }
 
         if (guessLetters.length === 8) {
-            $(".guesses").css("width", "20%");
+            $(".progress-bar").css("width", "20%");
         }
         if (guessLetters.length === 9) {
-            $(".guesses").css("width", "10%");
+            $(".progress-bar").css("width", "10%");
         }
 
         if (guessLetters.length === 10) {
-            $(".guesses").css("width", "0%");
+            $(".progress-bar").css("width", "0%");
         } 
 
     }
