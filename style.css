@@ -18,57 +18,6 @@ body {
 	text-align: center;
 }
 
-.typewriter h1 {
-  font-size: 60px;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 6s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-
-@media screen and (max-width: 700px) {
-
-	.typewriter h1 {
-		display: none;
-
-	}
-
-	.skills {
-		margin: 0px;
-		padding: 0px;
-
-	}
-
-	.contact {
-		margin: 0px;
-		padding: 0px;
-	}
-
-	
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-.top {
-	background-image: url("");
-	background-size: cover;
-	background-attachment: fixed;
-
-}
-
-footer {
-	background-color: #4e4e50;
-}
-
-
 h1,
 h2 {
 	font-weight: bolder;
@@ -97,13 +46,29 @@ h5 {
 
 }
 
-.bottom {
-	text-align: center;
-	color: white;
-	padding: 20px;
-	
+.typewriter h1 {
+  font-size: 60px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 6s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.top {
+	background-image: url("");
+	background-size: cover;
+	background-attachment: fixed;
+
+}
 
 #hexagon {
     width: 100%;
@@ -147,13 +112,6 @@ h5 {
 	float: right;
 
 }
-
-.arrow {
-	position: relative;
-	text-align: center;
-
-}
-
 
 .skills {
 	color: white;
@@ -744,6 +702,18 @@ button {
 	stroke-dashoffset: 0;
 	stroke: #c3073f;
   }
+
+
+  footer {
+	background-color: #4e4e50;
+}
+
+.bottom {
+	text-align: center;
+	color: white;
+	padding: 20px;
+	
+}
   
 
 @media screen and (max-width:48em) {
@@ -774,4 +744,25 @@ button {
 		display:block;
 		margin:5px 0;
 	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.typewriter h1 {
+		display: none;
+
+	}
+
+	.skills {
+		margin: 0px;
+		padding: 0px;
+
+	}
+
+	.contact {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	
 }
