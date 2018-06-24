@@ -1,0 +1,51 @@
+body {
+    color : white;
+}
+
+h2 {
+    color: white;
+
+}
+
+h4 {
+    margin: 5px;
+    padding: 3px;
+    font-weight: bolder;
+
+}
+
+.game {
+	height: 500px;
+	background-color: #1a1a1d;
+    text-align: center;
+    
+}
+
+.game h1 {
+    font-size: 60px;
+
+  }
+
+
+.color-guess {
+    background-color: #c3073f;
+    /* border: solid 1px white; */
+    padding: 20px;
+}
+
+
+.guesses {
+    background-color: #c3073f;
+    height: 50px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #303030;
+    margin: 1em 0;
+    padding: 0; 
+    
+}
+
