@@ -55,6 +55,25 @@ hr {
     
 }
 
+.hangman {
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+.hangman:hover {
+    color: #c3073f;
+    text-decoration: none;
+}
+
+#cword {
+    padding: 20px;
+    font-size: 40px;
+    /* border: solid 1px; */
+    letter-spacing: 10px;
+    background-color:#c3073f;
+    border-radius: 5px;
+}
+
 .progress-bar-color {
     background-color: #c3073f !important;
 }
