@@ -54,6 +54,7 @@ $(document).ready(function() {
                 guessLetters = [];
                 document.querySelector(".win").innerHTML = winCount;
                 alert("You win!");       
+                randomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];  
             }
 
             // when the guesses reach 0
@@ -67,6 +68,7 @@ $(document).ready(function() {
                 guesses = 10;
                 document.querySelector(".yourguesses").innerHTML = "";
                 guessLetters = [];  
+                randomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];  
                  
             }
         } else {
