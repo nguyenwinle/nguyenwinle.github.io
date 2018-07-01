@@ -434,6 +434,10 @@ nav ul li a:hover {
 
 }
 
+.col-md-4 {
+	padding: 10px;
+}
+
 .box1 {
 	background-color: white;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
