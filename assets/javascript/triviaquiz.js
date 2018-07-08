@@ -201,9 +201,9 @@ $(document).ready(function() {
         $('#correctAnswers').html("Correct Answers: " + correctAnswer);
         $('#incorrectAnswers').html("Incorrect Answers: " + incorrectAnswer);
         $('#unanswered').html("Unanswered: " + unanswered);
-        $('#startOverBtn').addClass('reset');
-        $('#startOverBtn').show();
-        $('#startOverBtn').html('Start Over?');
+        $('#startOver').addClass('reset');
+        $('#startOver').show();
+        $('#startOver').html('Start Over?');
     }
 
 
