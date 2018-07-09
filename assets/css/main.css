@@ -30,6 +30,7 @@ body {
 	  blink-caret .75s step-end infinite;
   }
 
+
 h1,
 h2 {
 	font-weight: bolder;
@@ -684,6 +685,12 @@ button {
 	text-align: center;
   }
   
+  .rounded a {
+	color: white;
+	text-decoration: none;
+
+  }
+
   #text a {
 	color: white;
 	text-decoration: none;
@@ -759,6 +766,12 @@ button {
 	}
 
 	.skills {
+		margin: 0px;
+		padding: 20px;
+
+	}
+
+	#hexagon {
 		margin: 0px;
 		padding: 20px;
 
