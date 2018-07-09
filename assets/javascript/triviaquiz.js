@@ -86,18 +86,18 @@ $(document).ready(function() {
     var correctAnswer; 
     var incorrectAnswer; 
 
-    $('#start').on('click', function(){
+    $('#start').on('click', function() {
         $(this).hide();
         newGame();
     });
 
-    $('#startOver').on('click', function(){
+    $('#startOver').on('click', function() {
         $(this).hide();
         newGame();
     });
 
     // this displays a new question
-    function newQuestion(){
+    function newQuestion() {
         // call the timer
         timer();
         
@@ -109,7 +109,7 @@ $(document).ready(function() {
         
         //sets up new questions & choices
         $('.question').html('<h3>' + blockchain[currentQuestion].question + '</h3>');
-        for(var i = 0; i < 4; i++){
+        for (var i = 0; i < 4; i++) {
             var choices = $('<div>');
             var choice = blockchain[currentQuestion].choices[i];
             choices.html('<button type="button" class="btn btn-outline-primary">' + choice + '</button>');
@@ -118,7 +118,7 @@ $(document).ready(function() {
             $('.answerList').append(choices);
         }
     
-        $('.choice').on('click',function(){
+        $('.choice').on('click',function() {
             selected = $(this).data('index');
             clearInterval(time);
             answerPage();
@@ -126,7 +126,7 @@ $(document).ready(function() {
     }
 
         // this resets the game
-        function newGame(){
+        function newGame() {
             $('#finalMessage').empty();
             $('#correctAnswers').empty();
             $('#incorrectAnswers').empty();
@@ -148,10 +148,10 @@ $(document).ready(function() {
     }
 
     // this will count down the timer
-    function showCountdown(){
+    function showCountdown() {
         seconds--;
         $('#timeLeft').html('<h3>Time Remaining: ' + seconds + '</h3>');
-        if(seconds < 1){
+        if(seconds < 1) {
             clearInterval(time);
             answered = false;
             answerPage();
@@ -160,7 +160,7 @@ $(document).ready(function() {
 
 
     // this displays the answer to the question
-    function answerPage(){
+    function answerPage() {
         $('#timeLeft').empty();
         $('#currentQuestion').empty();
         $('.choice').empty(); //Clears question page
@@ -169,10 +169,10 @@ $(document).ready(function() {
         var rightAnswer = blockchain[currentQuestion].choices[blockchain[currentQuestion].correct];
         var rightAnswerIndex = blockchain[currentQuestion].correct;
         //checks to see correct, incorrect, or unanswered
-        if((selected == rightAnswerIndex) && (answered == true)){
+        if ((selected == rightAnswerIndex) && (answered == true)) {
             correctAnswer++;
             $('#message').html("This is correct!");
-        } else if ((selected != rightAnswerIndex) && (answered == true)){
+        } else if ((selected != rightAnswerIndex) && (answered == true)) {
             incorrectAnswer++;
             $('#message').html("This is incorrect!");
             $('#correctedAnswer').html('The correct answer is: ' + rightAnswer);
@@ -183,9 +183,9 @@ $(document).ready(function() {
             answered = true;
         }
         
-        if(currentQuestion == (blockchain.length-1)){
+        if (currentQuestion == (blockchain.length-1)) {
             setTimeout(finalScore, 3000)
-        } else{
+        } else {
             currentQuestion++;
             setTimeout(newQuestion, 3000);
         }
@@ -193,7 +193,7 @@ $(document).ready(function() {
     }
 
     // displays the last page with the final score
-    function finalScore(){
+    function finalScore() {
         $('#timeLeft').empty();
         $('#message').empty();
         $('#correctedAnswer').empty();
