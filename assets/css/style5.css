@@ -1,0 +1,57 @@
+h1 {
+    font-size: 65px;
+    font-weight: bolder;
+    color: white;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.tracker {
+    color: #14a76c;
+
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #303030;
+
+}
+
+p {
+    color: #787878;
+    padding-top: 8px;
+    letter-spacing: 2px;
+}
+
+.schedule {
+    background-color: #303030;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.addtrain {
+    background-color: #303030;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.form-group {
+    padding-top: 10px;
+    
+}
+
+td {
+    text-transform: uppercase;
+}
+
+footer {
+    margin: 50px;
+}
